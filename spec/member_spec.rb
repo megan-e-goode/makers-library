@@ -33,4 +33,14 @@ describe Member do
       expect{ member.return_item('book') }.to raise_error('Item has not been checked out!')
     end
   end
+
+  describe '#details' do
+    it 'displays the details of the member' do
+      member.checked_out_items.push('book')
+      member.details
+      expect(member.id_number).to eq('12345')
+      expect(member.name).to eq('Bananaman')
+      expect(member.checked_out_items).to eq(['book'])
+    end
+  end
 end
