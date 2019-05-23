@@ -16,4 +16,8 @@ class Library
   def member_item_checkout(item)
     member_list.check_out_item(item)
   end
+
+  def return_item(item)
+    member_list.return_item(item)
+  end
 end

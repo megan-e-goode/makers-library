@@ -25,4 +25,11 @@ describe Library do
       library.member_item_checkout('book')
     end
   end
+
+  describe 'return_item' do
+    it 'tells member_list to remove item from member\'s checked out items' do
+      expect(member_list).to receive(:return_item)
+      library.return_item('book')
+    end
+  end
 end
