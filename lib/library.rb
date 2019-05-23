@@ -12,4 +12,8 @@ class Library
   def remove_member(id)
     member_list.remove(id)
   end
+
+  def member_item_checkout(item)
+    member_list.check_out_item(item)
+  end
 end

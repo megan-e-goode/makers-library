@@ -31,6 +31,13 @@ describe MemberList do
     end
   end
 
+  describe '#check_out_item' do
+    it 'passes item to a members checked out items' do
+      expect(member_class).to receive(:check_out)
+      list.check_out_item('book')
+    end
+  end
+
   describe '#details' do
     it 'displays a members details' do
     end

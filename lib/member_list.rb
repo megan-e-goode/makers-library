@@ -13,4 +13,8 @@ class MemberList
   def remove(id)
     members.delete_if { |member| member.include? id }
   end
+
+  def check_out_item(item)
+    @member_class.check_out(item)
+  end
 end
