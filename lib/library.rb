@@ -8,4 +8,8 @@ class Library
   def add_member(id, name)
     member_list.add(id, name)
   end
+
+  def remove_member(id)
+    member_list.remove(id)
+  end
 end

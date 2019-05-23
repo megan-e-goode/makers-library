@@ -11,4 +11,11 @@ describe Library do
       library.add_member('12345', 'Bananaman')
     end
   end
+
+  describe 'remove_member' do
+    it 'tells the member list to remove a member' do
+      expect(member_list).to receive(:remove)
+      library.remove_member('12345')
+    end
+  end
 end
