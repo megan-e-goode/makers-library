@@ -38,6 +38,13 @@ describe MemberList do
     end
   end
 
+  describe '#return_item' do
+    it 'tells member to remove item from checked out items' do
+      expect(member_class).to receive(:return_item)
+      list.return('book')
+    end
+  end
+
   describe '#details' do
     it 'displays a members details' do
     end

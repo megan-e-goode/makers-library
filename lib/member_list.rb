@@ -17,4 +17,8 @@ class MemberList
   def check_out_item(item)
     @member_class.check_out(item)
   end
+
+  def return(item)
+    @member_class.return_item(item)
+  end
 end
