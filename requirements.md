@@ -1,6 +1,6 @@
 # DONE - Be able to assign a book to anyone in the member list
 
-# Be able to return a book from anyone in the member list
+# DONE - Be able to return a book from anyone in the member list
 
 # Be able to retrieve and display the details of anyone in the member list (id number, name, list of currently checked out books) based on their id number
 
